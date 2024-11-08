@@ -14,4 +14,7 @@ class User extends Controller
     function Callingview(){
         return view('home');
     }
+    function kaushal(){
+        return view('admin.kaushal');
+    }
 }

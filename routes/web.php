@@ -13,3 +13,4 @@ Route::get("/about/{name}",function($name){
 });
 Route::get("/user/{name}",[User::class,'Username']);
 Route::get("/homec",[User::class,'Callingview']);
+Route::get("/admin",[User::class,'kaushal']);
