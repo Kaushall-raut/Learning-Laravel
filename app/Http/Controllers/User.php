@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\View;
 class User extends Controller
 {
     //
@@ -15,6 +15,11 @@ class User extends Controller
         return view('home');
     }
     function kaushal(){
-        return view('admin.kaushal');
+        if(View::exists('admin.kaushal')){
+
+            return view('admin.kaushal');
+        }else{
+            return "page not found";
+        }
     }
 }
